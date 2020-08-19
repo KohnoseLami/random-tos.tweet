@@ -1,5 +1,5 @@
 #モジュールインポート
-from concurrent.futures import ThreadPoolExecutor
+#from concurrent.futures import ThreadPoolExecutor
 import random, string
 from bs4 import BeautifulSoup
 from mechanize import Browser
