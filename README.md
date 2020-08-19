@@ -7,5 +7,5 @@ Mobile版TwitterはHTML版が存在しているのでSeleniumを使用せずに�
 Generates a mixed alphanumeric string of a specified number of characters randomly and tweets it in a mentioning format with @tos.
 Twitter for Mobile has an HTML version, so you can scrape it without using Selenium.
 
-#Used Library
+# Used Library
 random,bs4,mechanize,requests,http.cookiejar,time
