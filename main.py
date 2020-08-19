@@ -13,11 +13,11 @@ def randomname(n):
    return "".join(randlst)
 
 #アカウントのログパス
-LoginID = "555559999999999"
-LoginPASS = "ikki.3939"
+LoginID = "Your IDorMainAdress"
+LoginPASS = "Your Password"
 
 #動作スレッド数
-max_thread = 3
+#max_thread = 3
 
 #Browserオブジェクトを生成
 br = Browser()
@@ -41,7 +41,7 @@ br.select_form(action="/sessions")
 br["session[username_or_email]"] = LoginID
 br["session[password]"] = LoginPASS
 ret = br.submit()
-print("ログイン成功")
+print("Login Success")
 
 #ツイート関数
 def tweet():
@@ -57,14 +57,14 @@ def tweet():
             br.select_form(action="/compose/tweet")
             br["tweet[text]"] = "@tos " + randomname(10)
             br.submit()
-            print("ツイートしました" + "@tos " + randomname(10))
+            print("Tweeted" + "@tos " + randomname(10))
 
         except Exception as e:
             print(e)
             time.sleep(900)
 
         except KeyboardInterrupt:
-            print("強制終了")
+            print("Stop")
             input()
             exit()
 
